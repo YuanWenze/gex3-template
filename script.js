@@ -93,10 +93,7 @@ const app = Vue.createApp({
             }
         },
         truncateDescription(desc) {
-            if (desc && desc.length > 100) {
-                return desc.substring(0, 100) + '...';
-            }
-            return desc;
+         return desc;
         },
         formatDate(dateString) {
             if (!dateString) return '';
